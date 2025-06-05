@@ -15,7 +15,7 @@ This repo is an Angular 20 application with Tailwind V4 that can be used as a we
     .then(appRef => {
       customElements.define('<NAME OF THE WEB COMPONENT>', createCustomElement(App, {injector: appRef.injector}))
     })
-
+```
 3. Put the name of the component in the `/src/index.html` file like you would do in any other web page.
   **File: `index.html`**
   ```html
@@ -32,7 +32,7 @@ This repo is an Angular 20 application with Tailwind V4 that can be used as a we
       <YOUR-COMPONENT-NAME></YOUR-COMPONENT-NAME> <!-- HERE -->
     </body>
   </html>
-
+```
 4. Change the selector name in the `/src/app/app.ts` so it matches the name of the web component.
   **File: `/src/app/app.ts`**
   ```typescript
@@ -48,6 +48,6 @@ This repo is an Angular 20 application with Tailwind V4 that can be used as a we
   })
   export class App {
   }
-  
+  ```
 5. You can see the component changes with `ng serve`
 6. Lastly, you can use the component in any other web page building it with `ng build`. Then go to `dist/<YOUR-COMPONENT-NAME>/browser` and follow the example in the `index.html` file.
