@@ -5,5 +5,5 @@ import { App } from "./app/app";
 
 createApplication(appConfig)
   .then(appRef => {
-    customElements.define('loam-calculator', createCustomElement(App, {injector: appRef.injector}))
+    customElements.define('main-component', createCustomElement(App, {injector: appRef.injector}))
   })

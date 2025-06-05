@@ -1,7 +1,7 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
-  selector: 'loam-calculator',
+  selector: 'main-component',
   imports: [],
   templateUrl: './app.html',
   styleUrl: './app.css',
