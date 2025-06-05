@@ -1,12 +1,12 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  imports: [RouterOutlet],
+  selector: 'loam-calculator',
+  imports: [],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrl: './app.css',
+  standalone: true,
+  encapsulation: ViewEncapsulation.ShadowDom
 })
 export class App {
-  protected title = 'affordable_loam';
 }
